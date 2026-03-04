@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Template</title>
+
+
+    <!--tailwind-->
+
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!--tailwind + daisy ui-->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!--Google font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--icon-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<style>
+* {
+    font-family:  "Geist", sans-serif;
+}
+.img {
+    background-image: url(hotel.jpg);
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="flex justify-between items-center">
+    <div class=" flex text-xl  items-center text-gray-600 ">
+        <a href="#" class="bg-red-600 text-white p-4 hover:bg-gray-300 hover:text-black "><i class="fa-solid fa-cart-flatbed"></i>Logo</a>
+        <a class="p-4 hover:bg-gray-300 hover:text-black  " href="#Home">Rooms</a>
+        <a class="p-4 hover:bg-gray-300 hover:text-black  " href="#About">About</a>
+        <a class="p-4 hover:bg-gray-300 hover:text-black  " href="#Contact">Contact</a>
+    </div>
+    <div >
+       
+        <button class="text-gray-600 text-xl btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl p-4 hover:bg-gray-300 hover:text-black  "> <a href="#Contact">Book Now</a></button>
+    </div>
+    </div>
+    <!--main had-->
+    <div class="flex items-center  img bg-cover bg-center h-screen w-11/12 mx-auto">
+
+       
+      <div class="w-[660px] pl-3 ">
+   
+   
+        <h1 class="bg-red-500  text-white text-4xl"><i class="fa-solid fa-cart-flatbed"></i> Hotel Name</h1>
+       <div class="bg-white py-4">
+        <div class="flex gap-4 w-full">
+            <div class="flex-1 pl-3 py-4">
+        <p><i class="fa-solid fa-hotel"></i>Check In</p>
+        <input type="date" class="w-full p-1">
+         <p class="pt-5"> <i class="fa-solid fa-person"></i>Adults</p>
+        <input type="number" placeholder="1" class="w-full p-1">
+        </div>
+        <div class="flex-1 pr-2 py-4">
+        <p><i class="fa-solid fa-hotel"></i></i> Check Out</p>
+        <input type="date"  class="w-full p-1">
+         <p class="pt-5"><i class="fa-solid fa-child"></i> Kids</p>
+        <input type="number" placeholder="0"  class="w-full p-1">
+        </div>
+       </div>
+         <div class="pl-3 pt-3">
+          <button class=" btn bg-gray-500 hover:bg-gray-200 hover:text-black text-white border-[#e5e5e5]">
+               <i class="fa-brands fa-sistrix"></i>
+                 Search availability
+                </button>
+         </div>
+       </div>
+      </div>
+   
+    </div>
+
+  </header>
+  <section>
+    <!--fast-->
+    <div class="w-11/12 mx-auto">
+      <h1>Rooms</h1>
+      <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well. </p>
+      <div class="grid grid-cols-5 gap-4 w-full items-end">
+        <div>
+        <p><i class="fa-solid fa-hotel"></i>Check In</p>
+        <input type="date" class="w-full p-1">
+        </div>
+        <div>
+        <p><i class="fa-solid fa-hotel"></i></i> Check Out</p>
+        <input type="date" class="w-full p-1" >
+        </div>
+        <div>
+         <p> <i class="fa-solid fa-person"></i>Adults</p>
+        <input type="number" placeholder="1" class="w-full p-1"  >
+        </div>
+        <div>
+        <p ><i class="fa-solid fa-child"></i> Kids</p>
+        <input type="number" placeholder="0" class="w-full p-1"  >
+        </div>
+           <div>
+            <p> <i class="fa-brands fa-sistrix"></i>Search</p>
+         <button class="w-full p-1 btn bg-black hover:bg-gray-200 hover:text-black text-white border-[#e5e5e5]">
+           
+           Search 
+           </button>
+           </div>
+
+      </div>
+      <!--Second-->
+      <div>
+           <!--Card 1-->
+           <div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img src="room_single.jpg">
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Single Room</h2>
+    <p>from $99</p>
+    <p>Single bed</p>
+    <p>15m<sup>2</sub></p>
+      <div>
+        <i class="fa-solid fa-bath"></i>
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-tv"></i>
+        <i class="fa-solid fa-martini-glass"></i>
+        <i class="fa-solid fa-utensils"></i>
+
+      </div>
+    <div class="card-actions justify-end">
+      <button class="btn btn-neutral w-full border-none hover:bg-gray-200 hover:text-black">Choose Room</button>
+    </div>
+  </div>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
